@@ -18,6 +18,7 @@ function Home() {
                 {/* compoenente: landing */}
                 <h1>Prime 3D</h1>
                 <h2>Gana plata imprimiendo cuando tu quieras</h2>
+                <h2>Registrate</h2>
                 <h3>¿Como funciona?</h3>
 
                 {/* componente: que buscamos */}
