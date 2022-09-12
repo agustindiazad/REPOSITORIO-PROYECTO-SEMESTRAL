@@ -5,6 +5,7 @@ import Test from './pages/Test';
 
 
 function App() {
+  console.log("testing");
   return (
     <Router>
       <Routes>
