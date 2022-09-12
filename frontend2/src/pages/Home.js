@@ -1,24 +1,33 @@
-// import logo from './logo.svg';
-// import '././App.css';
+import React, { useState } from 'react'
+import Navbar from '../Components/Navbar/index'
+import Sidebar from '../Components/Sidebar/index'
 
 function Home() {
+    const [isOpen, setIsOpen] = useState(false)
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
         <div className="App">
             <header className="App-header">
-                {/* <img src={logo} className="App-logo" alt="logo" /> */}
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
+                <Sidebar isOpen={isOpen} toggle={toggle} />
+                <Navbar toggle={toggle} />
             </header>
+            <div className="App-body">
+                {/* compoenente: landing */}
+                <h1>Prime 3D</h1>
+                <h2>Gana plata imprimiendo cuando tu quieras</h2>
+                <h3>¿Como funciona?</h3>
+
+                {/* componente: que buscamos */}
+                <h1>que buscamos</h1>
+
+                {/* 
+                    <Componente: landing />
+                    <Componente: que buscamos />
+                */}
+            </div>
         </div>
     );
 }
