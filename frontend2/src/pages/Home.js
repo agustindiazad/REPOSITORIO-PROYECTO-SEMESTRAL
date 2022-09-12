@@ -11,8 +11,8 @@ function Home() {
     return (
         <div className="App">
             <header className="App-header">
-                <Sidebar isOpen={isOpen} toggle={toggle} />
-                <Navbar toggle={toggle} />
+                {/* <Sidebar isOpen={isOpen} toggle={toggle} />
+                <Navbar toggle={toggle} /> */}
             </header>
             <div className="App-body">
                 {/* compoenente: landing */}
