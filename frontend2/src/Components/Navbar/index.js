@@ -42,7 +42,7 @@ const Navbar = ({ toggle }) => {
                                 <NavLinks to='howto' smooth={true} duration={1000} spy={true} exact='true' offset={-50}>¿Que hacemos?</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='us' smooth={true} duration={1000} spy={true} exact='true' offset={-50}>Te estamos buscando</NavLinks>
+                                <NavLinks to='us' smooth={true} duration={1000} spy={true} exact='true' offset={-50}>Registrate</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to='' >|</NavLinks>
@@ -52,7 +52,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtinLink to='/imprime/paso1'>¡Ya tengo mi diseño!</NavBtinLink>
+                            <NavBtinLink to='/imprime/paso1'>¡Conviertete en Printer!</NavBtinLink>
                         </NavBtn>
                     </NavbarContainer>
                 </Nav>

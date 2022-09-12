@@ -14,18 +14,18 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to='howto' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={50}>
-                        ¿Como Usar?
+                        Ya tengo mi diseño
                     </SidebarLink>
                     <SidebarLink to='us' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={-10}>
-                        Nuestra Filosofía
+                        Registrate
                     </SidebarLink>
-                    <NavLinkr to='/tus-impresiones'>Tus Impresiones</NavLinkr>
+                    <NavLinkr to='/tus-impresiones'>Imprime en 3D</NavLinkr>
                     <SidebarLink>
                         _________
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/imprime/paso1'>¡Ya tengo mi diseño!</SidebarRoute>
+                    <SidebarRoute to='/imprime/paso1'>¡Conviertete en Printer!</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
