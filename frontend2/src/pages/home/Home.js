@@ -15,7 +15,7 @@ function Home() {
                 <Sidebar isOpen={isOpen} toggle={toggle} />
                 <Navbar toggle={toggle} />
                 <div className="landing">
-                    <h2>Registrate como Printer de</h2>
+                    <h2>Unete a la comunidad de Printers en</h2>
                     <h1>Prime 3D</h1>
                 </div>
 

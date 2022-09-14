@@ -19,7 +19,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to='us' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={-10}>
                         Registrate
                     </SidebarLink>
-                    <NavLinkr to='/tus-impresiones'>Imprime en 3D</NavLinkr>
+                    <a href='https://prime-3d.herokuapp.com/' target='_blank' style={{ textDecoration: 'none', color: 'inherit', fontSize: '1.5rem' }}>Imprime en 3D</a>
                     <SidebarLink>
                         _________
                     </SidebarLink>

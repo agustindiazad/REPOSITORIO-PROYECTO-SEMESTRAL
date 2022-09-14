@@ -48,7 +48,7 @@ const Navbar = ({ toggle }) => {
                                 <NavLinks to='' >|</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <a href='https://prime-3d.herokuapp.com/' target='_blank'>Imprime en 3D</a>
+                                <a href='https://prime-3d.herokuapp.com/' target='_blank' style={{ textDecoration: 'none', color: '#fff', fontSize: '1rem', height: '100%', display: 'flex', alignItems: 'center' }}>Imprime en 3D</a>
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
