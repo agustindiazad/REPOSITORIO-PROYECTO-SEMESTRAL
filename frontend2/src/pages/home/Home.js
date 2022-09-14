@@ -15,12 +15,11 @@ function Home() {
                 <Sidebar isOpen={isOpen} toggle={toggle} />
                 <Navbar toggle={toggle} />
                 <div className="landing">
-                    <h2>Unete a la comunidad de Printers en</h2>
-                    <h1>Prime 3D</h1>
+                    <h2 className='subtitle'>Unete a la comunidad de Printers en</h2>
+                    <h1 className='title'>Prime 3D</h1>
                 </div>
 
-                <div className="what">
-                    <h3>¿Como funciona?</h3>
+                <div className="how">
                     <h2>Gana plata imprimiendo cuando tu quieras</h2>
                     <p>vNam suscipit euismod nunc tincidunt lacinia. Pellentesque hendrerit eu erat nec cursus. Vivamus dictum at risus eget vulputate. Sed porttitor mi urna, vitae auctor sem iaculis et. Ut sagittis, turpis id suscipit vestibulum, leo ante gravida libero, vel auctor dolor ante sed libero. Donec bibendum condimentum ex, in aliquam ex fermentum varius. Vestibulum dignissim tellus id vulputate dignissim. Maecenas rutrum odio ligula, quis mollis leo ultricies ut. Ut vel tortor erat. Curabitur scelerisque et justo a fringilla. Curabitur eget risus odio. Duis pulvinar volutpat scelerisque. Duis sit amet urna nunc. Sed sollicitudin sagittis tortor eget sagittis.</p>
                 </div>

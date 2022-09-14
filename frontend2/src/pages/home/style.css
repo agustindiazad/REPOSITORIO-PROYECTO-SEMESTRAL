@@ -1,8 +1,22 @@
 .App {
     background-color: #1b3245;
+    background: linear-gradient(rgb(2, 3, 4) 0%, rgb(27, 50, 69) 30%);
     padding-top: 15px;
+    /* change the color to white */
+    color: white;
 }
 
 .landing {
+    margin: 60px 10px;
     text-align: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 120px;
+    color: #01bf71
+}
+
+.subtitle {
+    margin: 0;
 }
