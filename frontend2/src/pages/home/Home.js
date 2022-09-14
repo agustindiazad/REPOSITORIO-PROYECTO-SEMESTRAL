@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import Navbar from '../Components/Navbar/index'
-import Sidebar from '../Components/Sidebar/index'
+import Navbar from '../../Components/Navbar/index'
+import Sidebar from '../../Components/Sidebar/index'
+import './style.css'
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false)
@@ -10,11 +11,9 @@ function Home() {
 
     return (
         <div className="App">
-            <header className="App-header">
+            <div className="App-body">
                 <Sidebar isOpen={isOpen} toggle={toggle} />
                 <Navbar toggle={toggle} />
-            </header>
-            <div className="App-body">
                 <div className="landing">
                     <h2>Registrate como Printer de</h2>
                     <h1>Prime 3D</h1>
