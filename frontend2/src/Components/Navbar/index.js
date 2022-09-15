@@ -52,7 +52,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtinLink to='/imprime/paso1'>¡Conviertete en Printer!</NavBtinLink>
+                            <NavBtinLink to='/test'>¡Conviertete en Printer!</NavBtinLink>
                         </NavBtn>
                     </NavbarContainer>
                 </Nav>

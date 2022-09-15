@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <a href='https://prime-3d.herokuapp.com/' target='_blank' style={{ textDecoration: 'none', color: 'inherit', fontSize: '1.5rem' }}>Imprime en 3D</a>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/imprime/paso1'>¡Conviertete en Printer!</SidebarRoute>
+                    <SidebarRoute to='/test'>¡Conviertete en Printer!</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

@@ -34,7 +34,7 @@ function Home() {
                     </div>
 
                     <div className='register'>
-                        <h2>Registrate</h2>
+                        <h2 className='input-h2'>Registrate</h2>
                         <div className='inputs'>
                             <div className='input'>
                                 <h3 className='input-h3'>Nombre  y apellido</h3>
