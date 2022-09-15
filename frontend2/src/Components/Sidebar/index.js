@@ -13,16 +13,14 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='howto' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={50}>
-                        Ya tengo mi diseño
+                    <SidebarLink to='us' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={-150}>
+                        ¿Que hacemos?
                     </SidebarLink>
-                    <SidebarLink to='us' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={-10}>
+                    <SidebarLink to='register' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={-150}>
                         Registrate
                     </SidebarLink>
+                    <SidebarLink>_________</SidebarLink>
                     <a href='https://prime-3d.herokuapp.com/' target='_blank' style={{ textDecoration: 'none', color: 'inherit', fontSize: '1.5rem' }}>Imprime en 3D</a>
-                    <SidebarLink>
-                        _________
-                    </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to='/imprime/paso1'>¡Conviertete en Printer!</SidebarRoute>
