@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../../Components/Navbar/index'
 import Sidebar from '../../Components/Sidebar/index'
+import Footer from '../../Components/Footer/index'
 import './style.css'
 
 function Home() {
@@ -36,19 +37,19 @@ function Home() {
                         <h2>Registrate</h2>
                         <div className='inputs'>
                             <div className='input'>
-                                <h3>Nombre  y apellido</h3>
+                                <h3 className='input-h3'>Nombre  y apellido</h3>
                                 <input type='text'></input>
                             </div>
                             <div className='input'>
-                                <h3>Correo electronico</h3>
+                                <h3 className='input-h3'>Correo electronico</h3>
                                 <input type='text'></input>
                             </div>
                             <div className='input'>
-                                <h3>Celular (+569)</h3>
+                                <h3 className='input-h3'>Celular (+569)</h3>
                                 <input type='text'></input>
                             </div>
                             <div className='input'>
-                                <h3>Comuna</h3>
+                                <h3 className='input-h3'>Comuna</h3>
                                 <input type='text'></input>
                             </div>
                             <input type='submit'></input>
@@ -56,6 +57,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
