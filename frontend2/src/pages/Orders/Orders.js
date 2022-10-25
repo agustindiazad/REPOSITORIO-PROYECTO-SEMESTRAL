@@ -15,13 +15,13 @@ function Orders() {
         alert('Orden realizada con éxito')
     }
 
-    function handleMouseOver() {
+    function handleMouseOver(n_card) {
         console.log("funcinoa?")
-        document.getElementsByClassName('button')[0].style.display = 'block';
+        document.getElementsByClassName('button')[n_card].style.display = 'block';
     }
 
-    function handleMouseLeave() {
-        document.getElementsByClassName('button')[0].style.display = 'none';
+    function handleMouseLeave(n_card) {
+        document.getElementsByClassName('button')[n_card].style.display = 'none';
     }
 
 
@@ -32,7 +32,7 @@ function Orders() {
                 <Navbar toggle={toggle} />
             </header>
             <div className='container' on>
-                <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
+                <div className='box' onMouseOver={e => handleMouseOver(0)} onMouseLeave={e => handleMouseLeave(0)}>
                     <div className='box-title'>
                         <h1>Nombre del archivo</h1>
                     </div>
@@ -57,33 +57,7 @@ function Orders() {
                 </div>
 
 
-                <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
-                    <div className='box-title'>
-                        <h1>Nombre del archivo</h1>
-                    </div>
-                    <div className='box-content'>
-                        <h2>Ganancia: 2.500 CLP</h2>
-                        <div className='box-info'>
-                            <div className='box-attributes'>
-                                <h4>Comuna</h4>
-                                <h3>Peñololen</h3>
-                            </div>
-                            <h3>Color: Blanco</h3>
-                        </div>
-                        <div className='box-info'>
-
-                            <h3>Tamaño: Mediano</h3>
-                            <h3>Material: PLA</h3>
-                        </div>
-                    </div>
-                    <button className='button' onClick={e => handleButtonClick()}>
-                        Realizar
-                    </button>
-                </div>
-
-
-
-                <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
+                <div className='box' onMouseOver={e => handleMouseOver(1)} onMouseLeave={e => handleMouseLeave(1)}>
                     <div className='box-title'>
                         <h1>Nombre del archivo</h1>
                     </div>
@@ -109,7 +83,33 @@ function Orders() {
 
 
 
-                <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
+                <div className='box' onMouseOver={e => handleMouseOver(2)} onMouseLeave={e => handleMouseLeave(2)}>
+                    <div className='box-title'>
+                        <h1>Nombre del archivo</h1>
+                    </div>
+                    <div className='box-content'>
+                        <h2>Ganancia: 2.500 CLP</h2>
+                        <div className='box-info'>
+                            <div className='box-attributes'>
+                                <h4>Comuna</h4>
+                                <h3>Peñololen</h3>
+                            </div>
+                            <h3>Color: Blanco</h3>
+                        </div>
+                        <div className='box-info'>
+
+                            <h3>Tamaño: Mediano</h3>
+                            <h3>Material: PLA</h3>
+                        </div>
+                    </div>
+                    <button className='button' onClick={e => handleButtonClick()}>
+                        Realizar
+                    </button>
+                </div>
+
+
+
+                <div className='box' onMouseOver={e => handleMouseOver(3)} onMouseLeave={e => handleMouseLeave(3)}>
                     <div className='box-title'>
                         <h1>Nombre del archivo</h1>
                     </div>
