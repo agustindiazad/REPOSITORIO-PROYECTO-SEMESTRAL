@@ -4,7 +4,7 @@
     padding: 15px 60px;
     /* change the color to white */
     color: white;
-    height: 100vh;
+    height: 100%;
 }
 
 .container {
@@ -16,7 +16,7 @@
 }
 
 .box {
-    background-color: rgb(175, 235, 84);
+    background-color: #82b29e;
     padding: 15px;
     margin: 15px;
     border-radius: 10px;
