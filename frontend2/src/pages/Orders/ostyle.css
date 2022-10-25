@@ -17,12 +17,11 @@
 
 .box {
     background-color: rgb(175, 235, 84);
-    padding: 90px;
+    padding: 15px;
     margin: 15px;
     border-radius: 10px;
     color: #000000;
     transition: all 1s;
-
 }
 
 .box:hover {
@@ -31,14 +30,10 @@
 
 .button {
     margin: 30px;
+    padding: 12px 30px;
     border-radius: 50px;
     background: rgb(1, 191, 113);
-    padding: 12px 30px;
-    color: rgb(1, 6, 6);
-    font-size: 15px;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
     transition: all 0.2s ease-in-out 0s;
     cursor: pointer;

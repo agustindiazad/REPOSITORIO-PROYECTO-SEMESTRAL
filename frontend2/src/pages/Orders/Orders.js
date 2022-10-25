@@ -34,9 +34,10 @@ function Orders() {
             <div className='container' on>
                 <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
                     <h1>Nombre del archivo</h1>
-                    <h2>Comuna</h2>
-                    <h2>Color</h2>
-                    <h2>Tamaño</h2>
+                    <h2>Comuna:</h2>
+                    <h2>Color:</h2>
+                    <h2>Tamaño:</h2>
+                    <h2>Ganancia:</h2>
                     <button className='button' onClick={e => handleButtonClick()}>
                         Realizar
                     </button>
