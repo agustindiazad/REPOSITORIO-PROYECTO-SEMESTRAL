@@ -4,7 +4,9 @@
     padding: 15px 60px;
     /* change the color to white */
     color: white;
+    height: 100vh;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -12,7 +14,8 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-.box{
+
+.box {
     background-color: rgb(175, 235, 84);
     padding: 90px;
     margin: 15px;
@@ -21,17 +24,18 @@
     transition: all 1s;
 
 }
-.box:hover{
-	transform:scale(1.09) ;
+
+.box:hover {
+    transform: scale(1.09);
 }
-.button{
+
+.button {
     margin: 30px;
     border-radius: 50px;
     background: rgb(1, 191, 113);
     padding: 12px 30px;
     color: rgb(1, 6, 6);
     font-size: 15px;
-    display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
@@ -39,8 +43,12 @@
     transition: all 0.2s ease-in-out 0s;
     cursor: pointer;
     margin-bottom: -50px;
+    border: none;
+    display: none;
 }
-.button:hover{
+
+.button:hover {
     transition: all 0.2s ease-in-out 0s;
     background-color: rgb(255, 255, 255);
+    /* show the button */
 }
