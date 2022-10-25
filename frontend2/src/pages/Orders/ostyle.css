@@ -28,6 +28,12 @@
     transform: scale(1.09);
 }
 
+.box-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .button {
     margin: 30px;
     padding: 12px 30px;

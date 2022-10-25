@@ -33,11 +33,152 @@ function Orders() {
             </header>
             <div className='container' on>
                 <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
-                    <h1>Nombre del archivo</h1>
-                    <h2>Comuna:</h2>
-                    <h2>Color:</h2>
-                    <h2>Tamaño:</h2>
-                    <h2>Ganancia:</h2>
+                    <div className='box-title'>
+                        <h1>Nombre del archivo</h1>
+                    </div>
+                    <div className='box-content'>
+                        <h2>Ganancia: 2.500 CLP</h2>
+                        <div className='box-info'>
+                            <div className='box-attributes'>
+                                <h4>Comuna</h4>
+                                <h3>Peñololen</h3>
+                            </div>
+                            <h3>Color: Blanco</h3>
+                        </div>
+                        <div className='box-info'>
+
+                            <h3>Tamaño: Mediano</h3>
+                            <h3>Material: PLA</h3>
+                        </div>
+                    </div>
+                    <button className='button' onClick={e => handleButtonClick()}>
+                        Realizar
+                    </button>
+                </div>
+
+
+                <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
+                    <div className='box-title'>
+                        <h1>Nombre del archivo</h1>
+                    </div>
+                    <div className='box-content'>
+                        <h2>Ganancia: 2.500 CLP</h2>
+                        <div className='box-info'>
+                            <div className='box-attributes'>
+                                <h4>Comuna</h4>
+                                <h3>Peñololen</h3>
+                            </div>
+                            <h3>Color: Blanco</h3>
+                        </div>
+                        <div className='box-info'>
+
+                            <h3>Tamaño: Mediano</h3>
+                            <h3>Material: PLA</h3>
+                        </div>
+                    </div>
+                    <button className='button' onClick={e => handleButtonClick()}>
+                        Realizar
+                    </button>
+                </div>
+
+
+
+                <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
+                    <div className='box-title'>
+                        <h1>Nombre del archivo</h1>
+                    </div>
+                    <div className='box-content'>
+                        <h2>Ganancia: 2.500 CLP</h2>
+                        <div className='box-info'>
+                            <div className='box-attributes'>
+                                <h4>Comuna</h4>
+                                <h3>Peñololen</h3>
+                            </div>
+                            <h3>Color: Blanco</h3>
+                        </div>
+                        <div className='box-info'>
+
+                            <h3>Tamaño: Mediano</h3>
+                            <h3>Material: PLA</h3>
+                        </div>
+                    </div>
+                    <button className='button' onClick={e => handleButtonClick()}>
+                        Realizar
+                    </button>
+                </div>
+
+
+
+                <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
+                    <div className='box-title'>
+                        <h1>Nombre del archivo</h1>
+                    </div>
+                    <div className='box-content'>
+                        <h2>Ganancia: 2.500 CLP</h2>
+                        <div className='box-info'>
+                            <div className='box-attributes'>
+                                <h4>Comuna</h4>
+                                <h3>Peñololen</h3>
+                            </div>
+                            <h3>Color: Blanco</h3>
+                        </div>
+                        <div className='box-info'>
+
+                            <h3>Tamaño: Mediano</h3>
+                            <h3>Material: PLA</h3>
+                        </div>
+                    </div>
+                    <button className='button' onClick={e => handleButtonClick()}>
+                        Realizar
+                    </button>
+                </div>
+
+
+
+                <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
+                    <div className='box-title'>
+                        <h1>Nombre del archivo</h1>
+                    </div>
+                    <div className='box-content'>
+                        <h2>Ganancia: 2.500 CLP</h2>
+                        <div className='box-info'>
+                            <div className='box-attributes'>
+                                <h4>Comuna</h4>
+                                <h3>Peñololen</h3>
+                            </div>
+                            <h3>Color: Blanco</h3>
+                        </div>
+                        <div className='box-info'>
+
+                            <h3>Tamaño: Mediano</h3>
+                            <h3>Material: PLA</h3>
+                        </div>
+                    </div>
+                    <button className='button' onClick={e => handleButtonClick()}>
+                        Realizar
+                    </button>
+                </div>
+
+
+                <div className='box' onMouseOver={e => handleMouseOver()} onMouseLeave={e => handleMouseLeave()}>
+                    <div className='box-title'>
+                        <h1>Nombre del archivo</h1>
+                    </div>
+                    <div className='box-content'>
+                        <h2>Ganancia: 2.500 CLP</h2>
+                        <div className='box-info'>
+                            <div className='box-attributes'>
+                                <h4>Comuna</h4>
+                                <h3>Peñololen</h3>
+                            </div>
+                            <h3>Color: Blanco</h3>
+                        </div>
+                        <div className='box-info'>
+
+                            <h3>Tamaño: Mediano</h3>
+                            <h3>Material: PLA</h3>
+                        </div>
+                    </div>
                     <button className='button' onClick={e => handleButtonClick()}>
                         Realizar
                     </button>
