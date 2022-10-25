@@ -39,17 +39,13 @@ const Navbar = ({ toggle }) => {
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to='us' smooth={true} duration={1000} spy={true} exact='true' offset={-150}>¿Que hacemos?</NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to='register' smooth={true} duration={1000} spy={true} exact='true' offset={-150}>Registrate</NavLinks>
+                                <a href='/orders' style={{ textDecoration: 'none', color: '#fff', fontSize: '1rem', height: '100%', display: 'flex', alignItems: 'center' }}>Encuentra pedidos</a>
+                                {/* <NavLinks to='us' smooth={true} duration={1000} spy={true} exact='true' offset={-150}>¿Que hacemos?</NavLinks> */}
                             </NavItem>
                             <NavItem>
                                 <NavLinks to='' >|</NavLinks>
                             </NavItem>
-                            <NavItem>
-                                <a href='https://prime-3d.herokuapp.com/' target='_blank' style={{ textDecoration: 'none', color: '#fff', fontSize: '1rem', height: '100%', display: 'flex', alignItems: 'center' }}>Imprime en 3D</a>
-                            </NavItem>
+                            <a href='http://www.prime3d.cl/' target='_blank' style={{ textDecoration: 'none', color: '#fff', fontSize: '1rem', height: '100%', display: 'flex', alignItems: 'center' }}>Pagina principal</a>
                         </NavMenu>
                         <NavBtn>
                             <NavBtinLink to='/test'>¡Conviertete en Printer!</NavBtinLink>
