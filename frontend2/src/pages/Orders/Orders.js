@@ -16,7 +16,6 @@ function Orders() {
     }
 
     function handleMouseOver(n_card) {
-        console.log("funcinoa?")
         document.getElementsByClassName('button')[n_card].style.display = 'block';
     }
 
