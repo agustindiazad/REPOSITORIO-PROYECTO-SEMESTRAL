@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
-import Test from './pages/Test';
+import Orders from './pages/Orders/Orders';
 
 function App() {
   console.log("testing");
@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Home />} excact />
-        <Route path='/test' element={<Test />} excact />
+        <Route path='/orders' element={<Orders />} excact />
       </Routes>
     </Router>
   );

@@ -1,0 +1,46 @@
+.App-body {
+    background-color: #1b3245;
+    background: linear-gradient(rgb(2, 3, 4) 0%, rgb(27, 50, 69) 30%);
+    padding: 15px 60px;
+    /* change the color to white */
+    color: white;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: rgb(175, 235, 84);
+    padding: 90px;
+    margin: 15px;
+    border-radius: 10px;
+    color: #000000;
+    transition: all 1s;
+
+}
+.box:hover{
+	transform:scale(1.09) ;
+}
+.button{
+    margin: 30px;
+    border-radius: 50px;
+    background: rgb(1, 191, 113);
+    padding: 12px 30px;
+    color: rgb(1, 6, 6);
+    font-size: 15px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    margin-bottom: -50px;
+}
+.button:hover{
+    transition: all 0.2s ease-in-out 0s;
+    background-color: rgb(255, 255, 255);
+}
