@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     SidebarContainer, Icon, CloseIcon, SideBtnWrap,
-    SidebarLink, NavLinkr, SidebarWrapper, SidebarRoute, SidebarMenu
+    SidebarLink, NavLinkr, Link, SidebarWrapper, SidebarRoute, SidebarMenu
 } from './SidebarElements'
 
 
@@ -13,14 +13,13 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='us' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={-150}>
+                    {/* <SidebarLink to='us' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={-150}>
                         ¿Que hacemos?
-                    </SidebarLink>
-                    <SidebarLink to='register' onClick={toggle} smooth={true} duration={1000} spy={true} exact='true' offset={-150}>
-                        Registrate
-                    </SidebarLink>
+                    </SidebarLink> */}
+
+                    <Link href='/orders' style={{ textDecoration: 'none', color: 'white' }}>Encuentra pedidos</Link>
                     <SidebarLink>_________</SidebarLink>
-                    <a href='https://prime-3d.herokuapp.com/' target='_blank' style={{ textDecoration: 'none', color: 'inherit', fontSize: '1.5rem' }}>Imprime en 3D</a>
+                    <Link href='http://www.prime3d.cl/' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>Pagina principal</Link>
                 </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to='/test'>¡Conviertete en Printer!</SidebarRoute>

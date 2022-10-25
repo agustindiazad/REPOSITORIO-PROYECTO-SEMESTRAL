@@ -114,3 +114,15 @@ export const SidebarRoute = styled(LinkR)`
         background: #fff;
     }
 `;
+
+export const Link = styled.a`
+    height: 100%;
+    padding: 0 1rem;
+    margin-bottom: 40px;
+    
+    font-size: 1.5rem;
+    text-decoration: none;
+    line-height: 91px;
+    text-align: center;
+    color: #fff;
+    `
