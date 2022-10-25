@@ -17,7 +17,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                         ¿Que hacemos?
                     </SidebarLink> */}
 
-                    <Link href='/orders' style={{ textDecoration: 'none', color: 'white' }}>Encuentra pedidos</Link>
+                    <Link href='/pedidos' style={{ textDecoration: 'none', color: 'white' }}>Encuentra pedidos</Link>
                     <SidebarLink>_________</SidebarLink>
                     <Link href='http://www.prime3d.cl/' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>Pagina principal</Link>
                 </SidebarMenu>

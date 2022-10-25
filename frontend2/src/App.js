@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Home />} excact />
-        <Route path='/orders' element={<Orders />} excact />
+        <Route path='/pedidos' element={<Orders />} excact />
       </Routes>
     </Router>
   );
