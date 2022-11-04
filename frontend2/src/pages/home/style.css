@@ -21,6 +21,11 @@
     margin: 0;
 }
 
+.us {
+    display: flex;
+    flex-direction: row;
+}
+
 .why {
     margin-top: 10px;
 

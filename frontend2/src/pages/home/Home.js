@@ -22,7 +22,8 @@ function Home() {
 
                 <div className="us">
                     <h2>Gana plata imprimiendo cuando tu quieras</h2>
-                    <p>vNam suscipit euismod nunc tincidunt lacinia. Pellentesque hendrerit eu erat nec cursus. Vivamus dictum at risus eget vulputate. Sed porttitor mi urna, vitae auctor sem iaculis et. Ut sagittis, turpis id suscipit vestibulum, leo ante gravida libero, vel auctor dolor ante sed libero. Donec bibendum condimentum ex, in aliquam ex fermentum varius. Vestibulum dignissim tellus id vulputate dignissim. Maecenas rutrum odio ligula, quis mollis leo ultricies ut. Ut vel tortor erat. Curabitur scelerisque et justo a fringilla. Curabitur eget risus odio. Duis pulvinar volutpat scelerisque. Duis sit amet urna nunc. Sed sollicitudin sagittis tortor eget sagittis.</p>
+                    {/* a youtube video */}
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2Z4m4lnjxkY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div className="why">
