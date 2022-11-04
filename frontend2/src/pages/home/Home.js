@@ -23,14 +23,13 @@ function Home() {
                 <div className="us">
                     <h2>Gana plata imprimiendo cuando tu quieras</h2>
                     {/* a youtube video */}
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2Z4m4lnjxkY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className='video' width="560" height="315" src="https://www.youtube.com/embed/_uEUMZvTH7E?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    {/* <iframe className='video' width="560" height="315" src="https://www.youtube.com/embed/2Z4m4lnjxkY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </div>
 
                 <div className="why">
                     <div className="why-text">
                         <h2>¿Por que Prime 3D?</h2>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquet nisl, nec aliquam nisl nisl vel nisl. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquet nisl, nec aliquam nisl nisl vel nisl.</h4>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquet nisl, nec aliquam nisl nisl vel nisl. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquet nisl, nec aliquam nisl nisl vel nisl.</h4>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquet nisl, nec aliquam nisl nisl vel nisl. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquet nisl, nec aliquam nisl nisl vel nisl.</h4>
                     </div>
 
