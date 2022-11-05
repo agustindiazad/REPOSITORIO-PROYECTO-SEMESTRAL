@@ -11,6 +11,9 @@ function Orders() {
         setIsOpen(!isOpen)
     }
 
+
+
+
     function handleButtonClick() {
         alert('Orden realizada con éxito')
     }
@@ -30,6 +33,9 @@ function Orders() {
                 <Sidebar isOpen={isOpen} toggle={toggle} />
                 <Navbar toggle={toggle} />
             </header>
+            <div className="loader">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
             <div className='container' on>
                 <div className='box' onMouseOver={e => handleMouseOver(0)} onMouseLeave={e => handleMouseLeave(0)}>
                     <div className='box-title'>
