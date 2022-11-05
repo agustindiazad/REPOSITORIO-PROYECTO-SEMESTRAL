@@ -4,6 +4,7 @@ import Sidebar from '../../Components/Sidebar/index'
 import Footer from '../../Components/Footer/index'
 import './ostyle.css'
 
+let API_URL = "http://api.prime3d.cl/"
 
 function Orders() {
     const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +12,20 @@ function Orders() {
         setIsOpen(!isOpen)
     }
 
+    // API REQUEST
+    function handleApiresponse(data) {
+        console.log(data)
+        document.getElementsByClassName("loader")[0].style.display = "none"
+    }
 
+    var requestOptions = {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+    };
+    fetch(API_URL + 'api/print-style', requestOptions)
+        .then(response => response.json())
+        .then(data => handleApiresponse(data))
+        .catch(error => console.log('error', error));
 
 
     function handleButtonClick() {
