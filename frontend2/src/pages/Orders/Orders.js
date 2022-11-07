@@ -35,8 +35,8 @@ function Orders() {
             let box = document.createElement("div")
             box.className = "box"
             box.id = "box" + i
-            box.onmouseover = function () { handleMouseOver(i) }
-            box.onmouseleave = function () { handleMouseLeave(i) }
+            // box.onmouseover = function () { handleMouseOver(i) }
+            // box.onmouseleave = function () { handleMouseLeave(i) }
             // create
             let boxTitle = document.createElement("div")
             boxTitle.className = "box-title"
@@ -63,9 +63,10 @@ function Orders() {
             let boxAttributesH3_4 = document.createElement("h3")
             boxAttributesH3_4.innerHTML = "Material: " + orders[i].material
 
-            // now also create a button to accept the order
+            // now also create a button that says "Realizar este pedido" to accept the order
             let boxButton = document.createElement("button")
             boxButton.className = "button"
+            boxButton.innerHTML = "Realizar este pedido"
             // boxButton.innerHTML = "Aceptar"
             boxButton.onclick = function () { handleButtonClick() }
 
@@ -77,12 +78,12 @@ function Orders() {
             boxAttributes.appendChild(boxAttributesH3_2)
             boxAttributes.appendChild(boxAttributesH3_3)
             boxAttributes.appendChild(boxAttributesH3_4)
+            boxAttributes.appendChild(boxButton)
             boxInfo.appendChild(boxAttributes)
             boxContent.appendChild(boxInfo)
             box.appendChild(boxTitle)
             box.appendChild(boxSub)
             box.appendChild(boxContent)
-            box.appendChild(boxButton)
             container.appendChild(box)
 
         }
@@ -109,13 +110,13 @@ function Orders() {
         alert('Orden realizada con éxito')
     }
 
-    function handleMouseOver(n_card) {
-        document.getElementsByClassName('button')[n_card].style.display = 'block';
-    }
+    // function handleMouseOver(n_card) {
+    //     document.getElementsByClassName('button')[n_card].style.display = 'block';
+    // }
 
-    function handleMouseLeave(n_card) {
-        document.getElementsByClassName('button')[n_card].style.display = 'none';
-    }
+    // function handleMouseLeave(n_card) {
+    //     document.getElementsByClassName('button')[n_card].style.display = 'none';
+    // }
 
 
     return (
@@ -128,7 +129,7 @@ function Orders() {
                 <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
             </div>
             <div className='container' on>
-                <div className='box' onMouseOver={e => handleMouseOver(0)} onMouseLeave={e => handleMouseLeave(0)}>
+                {/* <div className='box' onMouseOver={e => handleMouseOver(0)} onMouseLeave={e => handleMouseLeave(0)}>
                     <div className='box-title'>
                         <h1>Nombre del archivo</h1>
                     </div>
@@ -150,7 +151,7 @@ function Orders() {
                     <button className='button' onClick={e => handleButtonClick()}>
                         Realizar
                     </button>
-                </div>
+                </div> */}
 
 
 
