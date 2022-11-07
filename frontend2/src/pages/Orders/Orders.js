@@ -19,6 +19,9 @@ function Orders() {
     const [apiDone, setApiDone] = useState(false)
     // Response
     function handleapiResponse(orders) {
+
+        if (apiDone === true) { return }
+
         console.log(orders)
         document.getElementsByClassName("loader")[0].style.display = "none"
 
@@ -60,6 +63,13 @@ function Orders() {
             let boxAttributesH3_4 = document.createElement("h3")
             boxAttributesH3_4.innerHTML = "Material: " + orders[i].material
 
+            // now also create a button to accept the order
+            let boxButton = document.createElement("button")
+            boxButton.className = "button"
+            // boxButton.innerHTML = "Aceptar"
+            boxButton.onclick = function () { handleButtonClick() }
+
+
             // append
             boxTitle.appendChild(boxTitleH1)
             boxSub.appendChild(boxSubH1)
@@ -72,7 +82,9 @@ function Orders() {
             box.appendChild(boxTitle)
             box.appendChild(boxSub)
             box.appendChild(boxContent)
+            box.appendChild(boxButton)
             container.appendChild(box)
+
         }
     }
 
