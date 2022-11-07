@@ -25,7 +25,7 @@ function Orders() {
         // this is where we will use the api response (the orders const) to create the boxes
         for (let i = 0; i < orders.length; i++) {
             // create the box insipired on this html: 
-            // <div className='box' onMouseOver={e => handleMouseOver(2)} onMouseLeave={e => handleMouseLeave(2)}> <div className='box-title'> <h1>Nombre del archivo</h1> </div> </div>
+            // <div className='box' onMouseOver={e => handleMouseOver(2)} onMouseLeave={e => handleMouseLeave(2)}> <div className='box-title'> <h1>Nombre del archivo</h1> </div> </div><div className='box-content'> <h2>Ganancia: 2.500 CLP</h2> <div className='box-info'> <div className='box-attributes'> <h4>Comuna</h4> <h3>Peñololen</h3> </div> <h3>Color: Blanco</h3> </div> <div className='box-info'> <h3>Tamaño: Mediano</h3> <h3>Material: PLA</h3> </div> </div>
 
             let container = document.getElementsByClassName("container")[0]
             // create the box
@@ -38,11 +38,40 @@ function Orders() {
             let boxTitle = document.createElement("div")
             boxTitle.className = "box-title"
             let boxTitleH1 = document.createElement("h1")
-            boxTitleH1.innerHTML = orders[i].created_at
+            boxTitleH1.innerHTML = orders[i].transaction_code.substring(0, 4)
+
+            let boxSub = document.createElement("div")
+            boxSub.className = "box-sub"
+            let boxSubH1 = document.createElement("h2")
+            boxSubH1.innerHTML = "Ganancia: " + orders[i].size
+
+            let boxContent = document.createElement("div")
+            boxContent.className = "box-content"
+            let boxInfo = document.createElement("div")
+            boxInfo.className = "box-info"
+            let boxAttributes = document.createElement("div")
+            boxAttributes.className = "box-attributes"
+            let boxAttributesH3 = document.createElement("h3")
+            boxAttributesH3.innerHTML = "Comuna " + orders[i].comuna
+            let boxAttributesH3_2 = document.createElement("h3")
+            boxAttributesH3_2.innerHTML = "Color: " + orders[i].material_color
+            let boxAttributesH3_3 = document.createElement("h3")
+            boxAttributesH3_3.innerHTML = "Tamaño: " + orders[i].size
+            let boxAttributesH3_4 = document.createElement("h3")
+            boxAttributesH3_4.innerHTML = "Material: " + orders[i].material
 
             // append
             boxTitle.appendChild(boxTitleH1)
+            boxSub.appendChild(boxSubH1)
+            boxAttributes.appendChild(boxAttributesH3)
+            boxAttributes.appendChild(boxAttributesH3_2)
+            boxAttributes.appendChild(boxAttributesH3_3)
+            boxAttributes.appendChild(boxAttributesH3_4)
+            boxInfo.appendChild(boxAttributes)
+            boxContent.appendChild(boxInfo)
             box.appendChild(boxTitle)
+            box.appendChild(boxSub)
+            box.appendChild(boxContent)
             container.appendChild(box)
         }
     }
@@ -53,7 +82,7 @@ function Orders() {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
         };
-        fetch(API_URL + 'api/customer-info', requestOptions)
+        fetch(API_URL + 'api/print-style', requestOptions)
             .then(response => response.json())
             .then(data => handleapiResponse(data))
             // .then(data => setOrders(data))
