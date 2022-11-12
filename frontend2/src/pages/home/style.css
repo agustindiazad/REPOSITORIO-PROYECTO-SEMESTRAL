@@ -24,12 +24,14 @@
 
 .us {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .video {
+    display: flex;
     border-radius: 15px;
+    margin: auto;
 }
 
 .why {
@@ -42,8 +44,18 @@
 
 .why-text {
     width: 70%;
-    text-align: left;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    background: rgb(221, 225, 231);
+    margin: 25px 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 15px;
 }
+
 
 .register {
     /* create a card (#dde1e7) with border and shadow */
