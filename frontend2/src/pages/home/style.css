@@ -22,19 +22,47 @@
     margin: 0;
 }
 
-.us {
+.win {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+}
+
+
+
+.margen {
+    width: 100%;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background: rgb(221, 225, 231);
 }
 
 .why {
     margin-top: 10px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
+
+.why-text {
+    width: 40%;
+    padding: 15px;
+    color: #000;
+
+}
+
+h4 {
+    margin-bottom: 24px;
+}
+
+.why-option {
+    width: 40%;
+    padding: 15px;
+    color: #000;
+}
+
+
 
 .register {
     /* create a card (#dde1e7) with border and shadow */
