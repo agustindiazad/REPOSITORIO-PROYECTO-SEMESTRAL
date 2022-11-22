@@ -38,25 +38,11 @@ function Home() {
                     </div>
                 </div>
                 <div className='register'>
-                    <h2 className='input-h2'>Registrate</h2>
                     <div className='inputs'>
-                        <div className='input'>
-                            <h3 className='input-h3'>Nombre  y apellido</h3>
-                            <input type='text'></input>
-                        </div>
                         <div className='input'>
                             <h3 className='input-h3'>Correo electronico</h3>
                             <input type='text'></input>
                         </div>
-                        <div className='input'>
-                            <h3 className='input-h3'>Celular (+569)</h3>
-                            <input type='text'></input>
-                        </div>
-                        <div className='input'>
-                            <h3 className='input-h3'>Comuna</h3>
-                            <input type='text'></input>
-                        </div>
-                        <input type='submit'></input>
                     </div>
                 </div>
             </div>
