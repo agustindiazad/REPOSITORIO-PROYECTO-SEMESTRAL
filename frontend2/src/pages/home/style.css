@@ -25,56 +25,48 @@
 .win {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
-
-
 
 .margen {
     width: 100%;
     border-radius: 15px;
     color: rgb(255, 255, 255);
-    background: rgb(221, 225, 231);
 }
 
 .why {
-    margin-top: 10px;
+    margin: 50px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+.why-title {
+    padding: 15px;
+    color: #000;
+
+}
+
+.why-col {
+    display: flex;
+    flex-direction: column;
+}
+
 .why-text {
-    width: 40%;
-    padding: 15px;
-    color: #000;
-
-}
-
-h4 {
     margin-bottom: 24px;
-}
-
-.why-option {
-    width: 40%;
     padding: 15px;
     color: #000;
 }
 
-
-
-.register {
-    /* create a card (#dde1e7) with border and shadow */
-    width: 80%;
-    background-color: #dde1e7;
-    border-radius: 15px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-
-
+.img-text {
     text-align: center;
-    color: #000;
+    display: flex;
+}
+
+.img-text img {
+    width: 100%;
+    object-fit: contain;
 }
 
 input {
