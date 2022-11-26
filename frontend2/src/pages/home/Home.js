@@ -18,11 +18,12 @@ function Home() {
                 <div className="landing">
                     <h2 className='subtitle'>Unete a la comunidad de Printers en</h2>
                     <h1 className='title'>Prime 3D</h1>
-                    
-                </div>
-
-                <div className="win">
-                    <h2>Gana plata a traves de la impresion 3D</h2>
+                    <h2 className='win'>Una de las formas más faciles de ganar dinero imprimiendo en 3D</h2>
+                    <div className='steps'>
+                        <img src='https://images.vexels.com/media/users/3/131133/isolated/preview/00c82f8151477cf6cabea002fadf5b2b-infografia-de-caja-redonda-de-idea.png'></img>
+                        <img src='https://cdn-icons-png.flaticon.com/512/2558/2558162.png'></img>
+                        <img src='https://cdn-icons-png.flaticon.com/512/4829/4829979.png'></img>
+                    </div>
                 </div>
             </div>
             <div className='margen'>
